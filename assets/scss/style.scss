@@ -8,6 +8,48 @@ $colorGrey: #9d9d9d;
 
 //######################################################################################################################
 
+//animation
+
+//animation head image and skills***************************************************************************************
+
+@keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+//**********************************************************************************************************************
+
+//######################################################################################################################
+
 //begin header styles***************************************************************************************************
 
 .header{
@@ -87,6 +129,9 @@ $colorGrey: #9d9d9d;
       line-height: 1.4em;
       color: $colorWhite;
       text-align: center;
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: 1s all;
       a{
         color: $colorRed;
         transition: .3s;
@@ -96,9 +141,16 @@ $colorGrey: #9d9d9d;
         transition: .3s;
       }
     }
+    &-descriptionShow{
+      opacity: 1;
+      transform: none;
+    }
   }
   .head-image{
     margin-top: 20px;
+    img{
+      //animation: 4s bounceInUp;
+    }
   }
 }
 
@@ -107,3 +159,36 @@ $colorGrey: #9d9d9d;
 
 //begin skills section styles*******************************************************************************************
 
+.skills{
+  .section-title{
+    margin-bottom: 50px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .item{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-basis: 49%;
+    box-shadow: 2px 3.464px 15px 0px rgba(90,122, 255, 0.3);
+    .item-img{
+      text-align: center;
+      margin-bottom: 20px;
+      img{
+        max-height: 90px;
+      }
+    }
+    .item-title > *{
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .item-description{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}

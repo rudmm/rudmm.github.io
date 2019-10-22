@@ -125,4 +125,7 @@ a {
     font-size: 35px;
     line-height: 1.3; }
 
+section .container {
+  padding: 0 10px; }
+
 /*# sourceMappingURL=default.css.map */

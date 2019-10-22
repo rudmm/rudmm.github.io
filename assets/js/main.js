@@ -18,10 +18,16 @@ function openMobileMenu(){
     });
 }
 
+function animateHeadText(){
+    let text = $('.my-description');
+    text.addClass('my-descriptionShow');
+}
+
 $(window).scroll(function () {
     viewMenu();
 });
 
 $(document).ready(function () {
     openMobileMenu();
+    animateHeadText();
 });
