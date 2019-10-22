@@ -1,0 +1,182 @@
+//variables
+
+$colorWhite: #fff;
+$colorRed: #ff6342;
+$colorRedHover: #ff231c;
+$colorGrey: #9d9d9d;
+
+
+//######################################################################################################################
+
+@media screen and (max-width: 768px) {
+  html{
+    margin-top: 40px;
+  }
+  .header{
+    .navbar{
+      height: auto;
+      min-height: 20px;
+      transform: none;
+      opacity: 1;
+      top: 0;
+      .btn{
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        span{
+          position: relative;
+          left: 50%;
+          width: 100%;
+          height: 3px;
+          background: $colorWhite;
+          -webkit-transform: rotate(0deg) translateX(-50%);
+          -moz-transform: rotate(0deg) translateX(-50%);
+          -o-transform: rotate(0deg) translateX(-50%);
+          transform: rotate(0deg) translateX(-50%);
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+          transition: 0.25s ease-in-out;
+        }
+      }
+      btn:hover span{
+        opacity: .7;
+      }
+      .btn.open{
+        span:nth-of-type(1){
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg) translateY(12px);
+        }
+        span:nth-of-type(2){
+          opacity: 0;
+          margin-left: -30px;
+        }
+        span:nth-of-type(3){
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg) translateY(-12px);
+        }
+      }
+      .mobile{
+        display: none;
+        min-height: 30vh;
+        hr{
+          margin: 10px -10px;
+          color: $colorGrey;
+        }
+        .social{
+          color: $colorGrey;
+          font-size: 14px;
+          .name{
+            margin-bottom: 10px;
+          }
+          .phone{
+            display: flex;
+            align-items: center;
+          }
+          img{
+            max-height: 30px;
+            margin-left: 10px;
+          }
+          .list{
+            margin-top: 10px;
+            .title{
+              *{
+                font-weight: 700;
+              }
+
+              margin-bottom: 5px;
+            }
+            img{
+              margin-left: 0;
+              margin-right: 10px;
+              width: 30px;
+              height: 30px;
+            }
+            .item{
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .navbar-menu{
+        margin-top: 30px;
+        height: 150px;
+        .navbar-list{
+          flex-direction: column;
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+    .my{
+      padding: 20px 0 0;
+      &-title{
+        font-size: 25px;
+      }
+      &-description{
+        font-size: 16px;
+      }
+    }
+  }
+
+}
+
+//######################################################################################################################
+
+@media screen and (max-width: 666px) {
+  .header{
+    .navbar{
+      .mobile{
+        height: 92vh;
+      }
+    }
+  }
+
+}
+
+//######################################################################################################################
+
+@media screen and (max-width: 480px) {
+  .header{
+    .my{
+      max-width: 90%;
+      &-title{
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      &-description{
+        font-size: 14px;
+      }
+    }
+    .head-image{
+      margin-top: 10px;
+    }
+  }
+}
+
+//######################################################################################################################
+
+@media screen and (max-width: 320px) {
+
+}
