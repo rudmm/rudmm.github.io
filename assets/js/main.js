@@ -12,7 +12,7 @@ function openMobileMenu(){
     let btn = $('.header .navbar .btn');
     let mobile = $('.header .navbar .mobile');
     btn.click(function () {
-        mobile.show();
+        mobile.toggle();
         btn.toggleClass('open');
 
     });
