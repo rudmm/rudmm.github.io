@@ -12,8 +12,9 @@ function openMobileMenu(){
     let btn = $('.header .navbar .btn');
     let mobile = $('.header .navbar .mobile');
     btn.click(function () {
+        mobile.show();
         btn.toggleClass('open');
-        mobile.slideToggle();
+
     });
 }
 

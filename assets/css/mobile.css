@@ -61,9 +61,11 @@
       display: none;
       min-height: 30vh; }
       .header .navbar .mobile hr {
+        display: block;
         margin: 10px -10px;
         color: #9d9d9d; }
       .header .navbar .mobile .social {
+        display: block;
         color: #9d9d9d;
         font-size: 14px; }
         .header .navbar .mobile .social .name {

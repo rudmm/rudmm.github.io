@@ -17,6 +17,10 @@
       justify-content: center; }
     .header .navbar .btn {
       display: none; }
+    .header .navbar hr {
+      display: none; }
+    .header .navbar .social {
+      display: none; }
     .header .navbar .navbar-list {
       display: inline-flex;
       width: 100%;
