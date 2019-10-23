@@ -2,6 +2,9 @@
   html {
     margin-top: 40px; }
 
+  .section-title > * {
+    font-size: 21px; }
+
   .header .navbar {
     height: auto;
     min-height: 20px;
@@ -101,10 +104,23 @@
     .header .my-title {
       font-size: 25px; }
     .header .my-description {
-      font-size: 16px; } }
+      font-size: 16px; }
+
+  .skills .row {
+    flex-direction: column;
+    align-items: center; }
+    .skills .row .item {
+      max-width: 540px; }
+      .skills .row .item-title > * {
+        font-size: 17px; }
+      .skills .row .item-description > * {
+        font-size: 15px; } }
 @media screen and (max-width: 666px) {
   .header .navbar .mobile {
-    height: 92vh; } }
+    height: 92vh; }
+
+  .skills {
+    margin-top: -100px; } }
 @media screen and (max-width: 480px) {
   .header .my {
     max-width: 90%; }
@@ -114,6 +130,16 @@
     .header .my-description {
       font-size: 14px; }
   .header .head-image {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .skills {
+    margin-top: -70px; }
+    .skills .list-skills .item-img {
+      margin-bottom: 10px; }
+    .skills .list-skills .item-title {
+      margin-bottom: 10px; } }
+@media screen and (max-width: 320px) {
+  .skills {
+    margin-top: -40px; } }
 
 /*# sourceMappingURL=mobile.css.map */

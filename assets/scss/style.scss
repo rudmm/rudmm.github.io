@@ -160,12 +160,18 @@ $colorGrey: #9d9d9d;
 //begin skills section styles*******************************************************************************************
 
 .skills{
+  margin-top: -250px;
+  background: $colorWhite;
+  position: relative;
   .section-title{
     margin-bottom: 50px;
   }
   .row{
     display: flex;
     justify-content: space-between;
+  }
+  .list-skills{
+    margin-bottom: 100px;
   }
   .item{
     padding: 20px;

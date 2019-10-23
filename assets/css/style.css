@@ -99,29 +99,35 @@
   .header .head-image {
     margin-top: 20px; }
 
-.skills .section-title {
-  margin-bottom: 50px; }
-.skills .row {
-  display: flex;
-  justify-content: space-between; }
-.skills .item {
-  padding: 20px;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 20px;
-  flex-basis: 49%;
-  box-shadow: 2px 3.464px 15px 0px rgba(90, 122, 255, 0.3); }
-  .skills .item .item-img {
-    text-align: center;
-    margin-bottom: 20px; }
-    .skills .item .item-img img {
-      max-height: 90px; }
-  .skills .item .item-title > * {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .skills .item .item-description {
-    text-align: center;
-    font-size: 20px; }
+.skills {
+  margin-top: -250px;
+  background: #fff;
+  position: relative; }
+  .skills .section-title {
+    margin-bottom: 50px; }
+  .skills .row {
+    display: flex;
+    justify-content: space-between; }
+  .skills .list-skills {
+    margin-bottom: 100px; }
+  .skills .item {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-basis: 49%;
+    box-shadow: 2px 3.464px 15px 0px rgba(90, 122, 255, 0.3); }
+    .skills .item .item-img {
+      text-align: center;
+      margin-bottom: 20px; }
+      .skills .item .item-img img {
+        max-height: 90px; }
+    .skills .item .item-title > * {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .skills .item .item-description {
+      text-align: center;
+      font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

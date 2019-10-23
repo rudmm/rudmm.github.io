@@ -3,17 +3,42 @@
     padding: 50px 15px 0; } }
 @media screen and (max-width: 1280px) {
   .container {
-    padding: 0 10px; }
+    padding: 0 20px; }
+
+  .section-title > * {
+    font-size: 28px; }
 
   .header .head-image img {
-    margin-left: -11px; } }
+    margin-left: -11px; }
+
+  .skills .section-title {
+    padding: 50px 10px 0; }
+  .skills .list-skills {
+    margin-bottom: 50px; } }
 @media screen and (max-width: 1024px) {
+  .section-title > * {
+    font-size: 24px; }
+
   .header .my {
     max-width: 600px; }
     .header .my-title {
       font-size: 30px; }
     .header .my-description {
       font-size: 17px;
-      line-height: 1.2em; } }
+      line-height: 1.2em; }
+
+  .skills {
+    margin-top: -150px; }
+    .skills .section-title {
+      padding-top: 30px;
+      margin-bottom: 30px; }
+    .skills .list-skills {
+      margin-bottom: 30px; }
+      .skills .list-skills .item-img img {
+        max-height: 50px; }
+      .skills .list-skills .item-title > * {
+        font-size: 20px; }
+      .skills .list-skills .item-description > * {
+        font-size: 18px; } }
 
 /*# sourceMappingURL=responsive.css.map */
