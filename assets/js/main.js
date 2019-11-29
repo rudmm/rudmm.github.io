@@ -25,11 +25,15 @@ function animateHeadText(){
 
 function animateLinks(selector){
     let menuList = $(selector);
+    let btn = $('.navbar .btn');
+    let menu = $('.navbar .mobile');
     menuList.on('click', 'a', function(event){
         event.preventDefault();
         let id = $(this).attr('href'),
         top =$(id).offset().top;
         $('body, html').animate({scrollTop: top},800);
+        btn.removeClass('open');
+        menu.hide();
     })
 }
 
