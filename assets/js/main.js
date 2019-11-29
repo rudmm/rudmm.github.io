@@ -23,6 +23,16 @@ function animateHeadText(){
     text.addClass('my-descriptionShow');
 }
 
+function animateLinks(selector){
+    let menuList = $(selector);
+    menuList.on('click', 'a', function(event){
+        event.preventDefault();
+        let id = $(this).attr('href'),
+        top =$(id).offset().top;
+        $('body, html').animate({scrollTop: top},800);
+    })
+}
+
 $(window).scroll(function () {
     viewMenu();
 });
@@ -30,4 +40,6 @@ $(window).scroll(function () {
 $(document).ready(function () {
     openMobileMenu();
     animateHeadText();
+    animateLinks('.navbar-list');
+    animateLinks('.my-descriptionShow');
 });

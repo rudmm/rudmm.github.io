@@ -185,6 +185,7 @@ $colorGrey: #9d9d9d;
         .item{
           max-width: 540px;
           margin-bottom: 20px;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
           a{
             display: flex;
             flex-direction: column;
@@ -198,7 +199,7 @@ $colorGrey: #9d9d9d;
             opacity: 1;
             color: #000;
             bottom: 0;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            
           }
           a:hover .item-text{
             transform: none;
