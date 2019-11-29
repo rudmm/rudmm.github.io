@@ -40,14 +40,8 @@
 
 
   //begin skills section styles*****************************************************************************************
-
-  .skills{
-    .section-title{
-      padding: 50px 10px 0;
-    }
-    .list-skills{
-      margin-bottom: 50px;
-    }
+  .section-title{
+    padding: 50px 10px 0;
   }
 }
 
@@ -87,7 +81,6 @@
       margin-bottom: 30px;
     }
     .list-skills{
-      margin-bottom: 30px;
       .item{
         &-img img{
           max-height: 50px;
@@ -100,6 +93,16 @@
         }
       }
     }
+  }
+}
+//end section skills styles*********************************************************************************************
+
+
+//begin section porfolio styles*****************************************************************************************
+
+.portfolio{
+  .section-title{
+    padding: 30px 10px;
   }
 }
 

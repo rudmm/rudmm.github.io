@@ -1,0 +1,53 @@
+header{
+    background-color:#eb413b;
+    color: white;
+    padding:10px 0px 15px 0px;    
+}
+header .right{
+    text-align:right;
+    font-size:20px;
+    margin-top:10px;
+}
+header .right span{
+    padding:0px 5px;    
+}
+header .center{
+    text-align:center;
+    margin-top:10px;
+}
+header .center input{
+    color:white;
+    background-color:transparent;
+    width: 100%;
+    border:none;
+    margin-left:-100px;
+    border-bottom:1px solid white;    
+}
+header .center input:focus{
+    outline-width: 0;
+}
+header .center input::placeholder{
+    color:white;
+    font-weight:500;
+    font-size:14px;
+    padding-bottom:-20px;
+}
+header .center button{
+    color:white;
+    background-color:transparent;
+    border:none;
+    margin-left:-30px;
+}
+@media(min-width:1024px){
+    
+   
+}
+@media (max-width: 767px) { 
+    header .left img{
+        width:142px;
+    }
+    header .right{
+        margin-top:4px;
+        font-size:16px;
+    }
+}

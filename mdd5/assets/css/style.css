@@ -1,0 +1,718 @@
+A,
+ABBR,
+ACRONYM,
+ADDRESS,
+APPLET,
+ARTICLE,
+ASIDE,
+AUDIO,
+B,
+BIG,
+BLOCKQUOTE,
+BODY,
+CANVAS,
+CAPTION,
+CENTER,
+CITE,
+CODE,
+DD,
+DEL,
+DETAILS,
+DFN,
+DIV,
+DL,
+DT,
+EM,
+EMBED,
+FIELDSET,
+FIGCAPTION,
+FIGURE,
+FOOTER,
+FORM,
+H1,
+H2,
+H3,
+H4,
+H5,
+H6,
+HEADER,
+HGROUP,
+HTML,
+I,
+IFRAME,
+IMG,
+INS,
+KBD,
+LABEL,
+LEGEND,
+LI,
+MARK,
+MENU,
+NAV,
+OBJECT,
+OL,
+OUTPUT,
+P,
+PRE,
+Q,
+RUBY,
+S,
+SAMP,
+SECTION,
+SMALL,
+SPAN,
+STRIKE,
+STRONG,
+SUB,
+SUMMARY,
+SUP,
+TABLE,
+TBODY,
+TD,
+TFOOT,
+TH,
+THEAD,
+TIME,
+TR,
+TT,
+U,
+UL,
+VAR,
+VIDEO {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+HEADER,SECTION,FOOTER{
+    max-width: 100%;
+}
+section{
+    margin-left: 110px;
+    margin-right: 130px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.global_wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: #0B3B5C;
+    color: #fff;
+}
+.mbox{
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.header{
+    width: 100%;
+    max-width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    transition: all .7s;
+}
+.header+.mbox{
+    margin-top: 115px;
+}
+.header.active{
+    background-color: #10243D;
+    z-index: 5;
+    transition: all .7s;
+    box-shadow: 0px 4px 20px rgba(55, 64, 66, 0.35);
+}
+.header .mbox{
+    display: flex;
+    align-items: center;
+    padding-top: 27px;
+    position: relative; 
+    padding-bottom: 10px;
+}
+.active .mbox{
+    padding-top: 10px;
+}
+.nav-logo{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 110px;
+}
+.nav-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.nav-bar{
+    display: inline-block;
+}
+.menu-bar{
+    display: inline-block;
+}
+.menu-bar li{
+    display: inline;
+    margin-right: 24px;
+    font-size: 16px;
+}
+.menu-bar li a {
+    position: relative;
+    padding-bottom: 20px;
+}
+.menu-bar li .border{
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: #d9b310;
+    left: 0;
+    width: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.menu-bar li:hover .border{
+    width: 100%;
+}
+.twitter-logo{
+    width: 47px;
+    height: 47px;
+}
+.twitter-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.btn-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1366px){
+    .nav-logo{
+        margin-left: 40px;
+    }
+}
+/* end header styles*/
+
+/*begin section styles*/
+.top{
+    position: relative;
+    margin-right: 0;
+    padding-right: 130px;
+}
+.top-tittle > *{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 40px;
+}
+.section-info{
+    margin-top: 40px;
+    display: flex;
+}
+.section-icon{
+    width: 120px;
+    height: 120px;
+    display: inline-block; 
+    margin-right: 30px; 
+}
+.section-icon img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.top-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    display: inline-block;
+    max-width: 1032px;
+}
+.top-btn{
+    max-width: 100%;
+}
+.top-btn a{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #D9B310;
+    margin-top: 55px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s;
+    margin-bottom: 70px;
+}
+.top-btn a:hover{
+    background-color: #d9b310;
+    color: #000;
+    transition: all 1s;
+}
+
+@media screen and (max-width: 1366px){
+    .top{
+        margin-right: 0;
+        padding-right: 50px;
+    }
+    .top-image{
+        right: 20px;
+    }
+    section{
+        margin-left: 40px;
+        margin-right: 50px;
+    }
+}
+
+/*end top section*/
+
+/*section-tittle styles*/
+.section-tittle > *{
+    font-family: 'EB Garamond', serif;
+    font-size: 36px;
+    line-height: 55px;
+    display: inline-block;
+    padding-bottom: 3px;
+    max-width: 1200px;
+}
+.section-tittle span{
+
+    border-bottom: 3px solid #d9b310;
+}
+
+/*early section*/
+
+.early .top-btn a{
+    margin-bottom: 60px;
+}
+
+/*begin target section*/
+
+.target{
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.target-text{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 23px;
+}
+
+/*end target section*/
+
+
+
+/*begin disclaimer section*/
+
+.disclaimer{
+    margin-top: 50px;
+}
+.disclaimer-text{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 30px;
+}
+
+/*end disclaimer section*/
+
+/*begin faculty section*/
+
+.faculty{
+    margin-top: 50px;
+}
+.docent-list{
+    margin-top: 30px;
+}
+.docent-item{
+    display: flex;
+    margin-bottom: 30px;
+}
+.docent-image{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    min-width: 120px;
+}
+.docent-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.docent-info{
+    display: inline-block;
+    flex-basis: 1050px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.docent-tittle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    display: inline;
+    margin-bottom: 10px;
+}
+.docent-text{
+    font-size: 20px;
+    line-height: 27px;
+    display: inline;
+}
+
+/*end faculty section*/
+
+/*begin financial section*/
+
+.financial{
+    margin-top: 70px;
+}
+.financial-content{
+    margin-top: 30px;
+}
+.financial .content-tittle{
+    line-height: 27px;
+}
+.financial .content-list li{
+    line-height: 27px;
+}
+
+/*end financial section*/
+
+/*begin accreditation section*/
+
+.accreditation{
+    margin-top: 55px;
+}
+.accreditation-text{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*end accreditation section*/
+
+/*begin dates section*/
+.dates{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.dates-text{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*end dates section*/
+
+/*begin footer*/
+
+.footer{
+    padding: 15px 0;
+    background-color: #10243D;
+    margin-top: 100px;
+}
+.footer .mbox{
+    padding-left: 0;
+}
+.footer-text{
+    max-width: 737px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        background-color: #10243D;
+        z-index: 5;
+        box-shadow: 0px 4px 20px rgba(55, 64, 66, 0.35);
+    }
+    .header .mbox{
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    .nav-logo{
+        margin-right: 0;
+        min-width: 62px;
+    }
+    .nav-bar{
+        display: none;
+        width: 100%;
+        margin-right: 100px;
+    }
+    .twitter-logo{
+        display: none;
+    }
+    .cme-logo{
+        display: none;
+    }
+    .btn-menu{
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+    }
+    .btn-menu span{
+        display: block;
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background: #fff;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+    .btn-menu span:nth-child(1) {
+        top: 1px;
+      }
+      .btn-menu span:nth-child(2) {
+        top: 11px;
+      }
+      .btn-menu span:nth-child(3) {
+        top: 21px;
+      }
+      .btn-menu.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+      .btn-menu.open span:nth-child(2) {
+        opacity: 0;
+        left: -20px;
+      }
+      .btn-menu.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      }
+      .menu-bar{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          height: 40vh;
+          margin-top: 40px;
+          margin-bottom: 40px;
+      }
+      .top-tittle > *{
+          font-size: 27px;
+          line-height: 35px;
+      }
+      .section-tittle > *{
+          font-size: 25px;
+          line-height: 45px;
+      }
+}
+@media screen and (max-width: 768px){
+    .man-icon{
+        margin-bottom: 10px;
+    }
+    .nav-logo{
+        margin-left: 20px;
+    }
+    .btn-menu{
+        right: 20px;
+    }
+    .nav-bar{
+        margin-right: 80px;
+    }
+    .top{
+        padding-right: 20px;
+    }
+    .top-image{
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .top-text p:nth-of-type(1), .top-text p:nth-of-type(2){
+        max-width: 100%;
+    }
+    .top-text p{
+        margin-right: 0;
+    }
+    section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .section-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-icon{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer-text{
+        padding: 0 20px;
+    }
+    .top-tittle > *{
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 666px){
+    .top-btn a {
+        margin-top: 20px;
+    }
+    .target{
+        margin-top: 40px;
+    }
+    .top-btn a, .early .top-btn a{
+        margin-bottom: 20px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header+.mbox{
+        margin-top: 90px;
+    }
+    .top-tittle > *{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .man-icon{
+        margin-top: 10px;
+    }
+    .top-btn a{
+        margin-bottom: 20px;
+    }
+    .target{
+        margin-top: 0;
+    }
+    .faculty{
+        margin-top: 0;
+    }
+    .disclaimer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .nav-logo{
+        max-width: 40px;
+        height: auto;
+        width: 100%;
+    }
+    .nav-logo img{
+        max-width: 40px;
+    }
+    .nav-bar{
+        margin-right: 55px;
+    }
+    .menu-bar li{
+        font-size: 14px;
+    }
+    .header+.mbox{
+        margin-top: 75px;
+    }
+    .btn-menu{
+        top: 15px;
+    }
+    .top-tittle > *{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .section-tittle > *{
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .objectives .section-tittle{
+        padding-top: 20px;
+    }
+    .objectives-content{
+        margin-top: 10px;
+    }
+    .disclaimer{
+        margin-top: 20px;
+    }
+    .disclaimer-text{
+        margin-top: 10px;
+    }
+    .faculty{
+        margin-top: 20px;
+    }
+    .docent-list{
+        margin-top: 10px;
+    }
+    .docent-tittle{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .docent-text{
+         font-size: 14px;
+         line-height: 19px;
+    }
+    .financial{
+        margin-top: 20px;
+    }
+    .financial-content{
+        margin-top: 10px;
+    }
+    .accreditation{
+        margin-top: 20px;
+    }
+    .accreditation-text{
+        margin-top: 10px;
+    }
+    .dates{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .menu-bar li{
+        font-size: 13px;
+    }
+}

@@ -173,6 +173,44 @@ $colorGrey: #9d9d9d;
 
   //end section skills styles*******************************************************************************************
 
+
+  //begin section portfolio styles**************************************************************************************
+
+  .portfolio{
+    .list-portfolio{
+      .row{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        .item{
+          max-width: 540px;
+          margin-bottom: 20px;
+          a{
+            display: flex;
+            flex-direction: column;
+          }
+          .portfolio-img{
+            filter: none;
+          }
+          &-text{
+            background: none;
+            position: relative;
+            opacity: 1;
+            color: #000;
+            bottom: 0;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          }
+          a:hover .item-text{
+            transform: none;
+          }
+          a:hover .portfolio-img{
+            transform: none;
+            filter: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 //######################################################################################################################
@@ -237,6 +275,18 @@ $colorGrey: #9d9d9d;
   }
 
   //end skills section styles*******************************************************************************************
+  
+  //begin portfolio styles**********************************************************************************************
+
+  .portfolio{
+    .list-portfolio{
+      .row{
+        .item{
+          
+        }
+      }
+    }
+  }
 }
 
 //######################################################################################################################
