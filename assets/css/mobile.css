@@ -178,7 +178,13 @@
         -ms-transform: none;
         transform: none;
         -webkit-filter: none;
-        filter: none; } }
+        filter: none; }
+  .about .my-info h3 {
+    font-size: 17px; }
+  .about p {
+    font-size: 14px; }
+  .about h4 {
+    font-size: 15px; } }
 
 @media screen and (max-width: 666px) {
   .header .navbar .mobile {

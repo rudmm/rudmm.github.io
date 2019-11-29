@@ -32,7 +32,9 @@
     .skills .list-skills .item-title > * {
       font-size: 20px; }
     .skills .list-skills .item-description > * {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .portfolio .section-title {
+    padding: 30px 10px; } }
 
-.portfolio .section-title {
+.about .section-title {
   padding: 30px 10px; }
