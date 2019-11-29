@@ -157,6 +157,9 @@
       transform: none; }
   .header .head-image {
     margin-top: 20px; }
+    .header .head-image img {
+      -webkit-animation: 4s bounceInUp;
+      animation: 4s bounceInUp; }
 
 .skills {
   margin-top: -250px;
