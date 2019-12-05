@@ -288,3 +288,16 @@
     .about .social .list .item {
       min-width: 30px;
       margin-right: 10px; }
+
+.footer {
+  background-color: #222;
+  padding: 10px;
+  color: #9d9d9d;
+  font-weight: bold; }
+  .footer .copyrighter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
