@@ -46,4 +46,5 @@ $(document).ready(function () {
     animateHeadText();
     animateLinks('.navbar-list');
     animateLinks('.my-descriptionShow');
+    animateLinks('.my-work');
 });
