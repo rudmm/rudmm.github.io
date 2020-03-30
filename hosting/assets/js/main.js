@@ -1,10 +1,8 @@
 function languageSelect(){
     let languageList = jQuery('.language-wrapper ul');
-    languageList.hover(function(){
-        languageList.addClass('open');
-    },
-    function(){
-        languageList.removeClass('open');
+    
+    languageList.click(function(){
+        languageList.toggleClass('open');
     });
 }
 
@@ -13,11 +11,11 @@ function subMenuOpen(){
     menuHasChildren.each(function(i){
         menuHasChildren.eq(i).hover(function(){
             let submenu = menuHasChildren.eq(i).children('.sub-menu');
-            submenu.eq(0).fadeIn("slow");
+            submenu.eq(0).slideDown();
         },
         function(){
             let submenu = menuHasChildren.eq(i).children('.sub-menu');
-            submenu.eq(0).fadeOut("slow");
+            submenu.eq(0).slideToggle();
         });
     });
 }
@@ -56,10 +54,19 @@ function advantagesSlider(){
         infinite: true,
         slidesToShow:2,
         slidesToScroll: 2,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 3000,
         dots: true,
-        appendDots: jQuery('.advantages-slider-dots')
+        appendDots: jQuery('.advantages-slider-dots'),
+        responsive: [
+            {
+              breakpoint: 820,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 }
 
@@ -117,7 +124,7 @@ function pricesSlider(){
 
 jQuery(document).ready(function(){
     languageSelect();
-    subMenuOpen();
+    //subMenuOpen();
     homeTopSlider();
     advantagesSlider();
     reviewsSlider();
