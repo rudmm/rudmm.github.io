@@ -1522,16 +1522,7 @@ img{
     top: 19px;
 }
 .date-stock img{
-    width: auto;
-}
-.date-stock .back{
-    width: 200px;
-}
-.date-stock .arrow{
-    width: 32px;
-    position: absolute;
-    left: 7px;
-    top: 0;
+    width: 210px;
 }
 .date-stock .date{
     color: #FCFDFF;
