@@ -147,6 +147,70 @@ ul{
     line-height: 13px;
     color: #D3D3D3;
 }
+.btn-menu{
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; 
+}
+.btn-menu span{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 22px;
+    background: #C0214B;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    -o-transform: rotate(0deg) translateX(-50%);
+    -ms-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.btn-menu span:nth-child(1) {
+    margin-top: -9px; 
+}
+.btn-menu span:nth-child(3) {
+    margin-top: 9px; 
+}
+.btn-menu.open span:nth-child(1) {
+    top: 50%;
+    margin-top: 0;
+    left: 25%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); 
+}
+.btn-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -20px; 
+}
+.btn-menu.open span:nth-child(3) {
+    top: 50%;
+    left: 25%;
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); 
+}
 .global-wrapper{
     width: 100%;
     height: 100%;
@@ -375,6 +439,9 @@ img{
     line-height: 17px;
     text-transform: uppercase;
     transition: .3s all;
+}
+.header-middle-inner .right-block .mobile-block{
+    display: none;
 }
 .header-middle-inner .new-client{
     margin-left: 20px;
@@ -678,12 +745,6 @@ img{
     flex-basis: 330px;
 }
 
-.service-item .item-img{
-    min-height: 210px;
-    display: flex;
-    align-items: flex-end;
-}
-
 .service-item .item-title>*{
     font-weight: 600;
     font-size: 22px;
@@ -709,11 +770,17 @@ img{
     position: relative;
     background: url('../img/Union.jpg');
     background-position: left bottom;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+.reviews .section-title{
+    margin-top: 0;
 }
 .reviews-list{
     margin-top: 30px;
+}
+.reviews-list .slick-list{
+    
 }
 
 .review-item{
@@ -831,17 +898,8 @@ img{
     margin-top: 20px;
 }
 .new-client-btn a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     width: 370px;
     height: 50px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 .new-client-btn a:hover{
     background: #53BB41;
@@ -2002,10 +2060,11 @@ img{
 }
 
 @media screen and (max-width: 1280px){
-    .section-title{
+    .section-title, .services{
         margin-top: 70px;
         margin-bottom: 40px;
     }
+
     .advantages-slide .img-block{
         width: 70px;
         margin-right: 20px;
@@ -2014,6 +2073,28 @@ img{
         padding: 0 10px;
         box-sizing: border-box;
     }
+    .service-item{
+        padding: 0 10px;
+    }
+    /*begin reviews*/
+    .reviews{
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+    /*end reviews*/
+
+    /*happyclients section*/
+    .quantity-clients p{
+       font-size: 20px; 
+    }
+    .quantity-clients p span{
+        font-size: 40px;
+    }
+    .question p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    /*end happyclients section*/
     
 }
 
@@ -2076,7 +2157,7 @@ img{
 
     /*end navbar*/
 
-    .section-title{
+    .section-title, .services{
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -2128,6 +2209,42 @@ img{
     .advantages-slider{
         margin-top: 30px;
     }
+    /*advantages slider end*/
+
+    /*begin services*/
+    .service-item .item-title>*{
+        font-size: 18px;
+    }
+
+    /*end services*/
+
+    /*begin reviews*/
+    .reviews .slick-slide{
+        margin: 0 5px;
+    }
+    .reviews{
+        padding-top: 40px;
+    }
+    .review-item .name{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    /*end reviews*/
+
+    /*brand section*/
+    .brand{
+        padding: 40px 0;
+    }
+    .list-brand .logobrand{
+        height: 35px;
+    }
+    /*end brand section*/
+
+    /*happyclients section*/
+    .quantity-clients p{
+        
+    }
+    /*end happyclients section*/
 }
 
 @media screen and (max-width: 992px){
@@ -2148,14 +2265,52 @@ img{
     .advantages-slide .info-title{
         font-size: 16px;
     }
+
+    /*happyclients section*/
+    .quantity-clients p{
+        font-size: 18px; 
+     }
+     .quantity-clients p span{
+         font-size: 35px;
+     }
+     .question p{
+         font-size: 16px;
+         margin-top: 10px;
+     }
+     .new-client-btn a{
+        width: 315px;
+        height: 45px;
+     }
+     /*end happyclients section*/
+     .red-btn, .white-btn, .green-btn, .disable{
+         font-size: 13px;
+     }
+
+     /*footer begin*/
+     .footer-menu ul li, .social-list ul li{
+         margin-right: 15px;
+     }
+     /*end footer*/
 }
 @media screen and (max-width: 820px){
     .advantages-slide{
         justify-content: center;
     }
+    /*happyclients section*/
+    .quantity-clients p{
+        font-size: 16px; 
+     }
+     .quantity-clients p span{
+         font-size: 30px;
+     }
+     .question p{
+         font-size: 15px;
+         margin-top: 10px;
+     }
+     /*end happyclients section*/
 }
 @media screen and (max-width: 767px){
-    .top-menu, .client{
+    .top-nav-wrapper{
         display: none;
     }
     .top-nav-right-block{
@@ -2165,9 +2320,119 @@ img{
     /*end header styles*/
 
     /*begin header middle*/
-
-    .header-middle-inner .right-block{
+    .header-middle{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 24;
+        background-color: #fff;
+        border-bottom: 1px solid #A9ABBD;
+    }
+    html{
+        padding-top: 80px;
+    }
+    .header-middle-inner .right-block> .discount, .header-middle-inner .right-block> .new-client{
         display: none;
+    }
+    .header-middle-inner .right-block .mobile-block{
+        display: block;
+    }
+    .hidden-block{
+        position: fixed;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        display: none;
+    }
+    .hidden-block.open{
+        display: block;
+    }
+    .hidden-block .menu-content{
+        position: absolute;
+        right: -100%;
+        top: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        max-width: 375px;
+        background-color: #fff;
+        transition: 1s all;
+    }
+    .hidden-block .mobile-menu .sub-menu{
+        display: none;
+        position: static;
+    }
+    .hidden-block .mobile-menu .sub-menu li a{
+        font-weight: 500;
+        padding: 0;
+    }
+    .hidden-block .menu-content.show{
+        right: 0;
+    }
+    .menu-language ul{
+        display: flex;
+        padding-left: 10px;
+    }
+    .menu-language ul li{
+        box-sizing: border-box;
+        width: 35px;
+        height: 35px;
+    }
+    .menu-language ul li.current {
+        border: 1px solid #fff;
+    }
+    .hidden-block .menu-language ul li a{
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .hidden-block .menu-content .top-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A9ABBD;
+        height: 60px;
+        width: 100%;
+    }
+    .hidden-block .btn-menu span{
+        background-color: #fff;
+    }
+    .hidden-block .mobile-menu, .bottom-mobile{
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .hidden-block .mobile-menu li{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hidden-block .mobile-menu li a{
+        color: #222B34;
+    }
+    .bottom-mobile .client{
+        display: block;
+    }
+    .bottom-mobile .client a{
+        margin: 0;
+    }
+    .bottom-mobile .new-client{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .bottom-mobile .discount{
+        margin-top: 10px;
+    }
+    .bottom-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     /*begin navbar*/
@@ -2204,7 +2469,7 @@ img{
     .section-title > h2{
         font-size: 27px;
     }
-    .section-title{
+    .section-title, .services{
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -2214,7 +2479,59 @@ img{
         width: 7px;
         height: 7px;
     }
-    
+
+    /*begin services*/
+    .services-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item{
+        max-width: 400px;
+        flex-basis: auto;
+    }
+    /*end services*/
+
+    /*begin reviews*/
+    .reviews .slick-slide{
+        margin: 0 5px;
+    }
+    .reviews{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*end reviews*/
+    /*brand section*/
+    .brand{
+        padding: 20px 0;
+    }
+    .list-brand .logobrand{
+        height: 25px;
+    }
+    /*end brand section*/
+
+    /*begin happyclients*/
+    .infohappy .quantity-clients p{
+        display: flex;
+        flex-direction: column;
+    }
+    .quantity-clients p span{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /*end happyclients*/
+
+    /*footer begin*/
+    .footer .content-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-logo{
+        margin-bottom: 20px;
+    }
+    .footer-menu{
+        margin-bottom: 20px;
+    }
+    /*end footer*/
 }
 
 @media screen and (max-width: 666px){
@@ -2242,6 +2559,16 @@ img{
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    /*brand section*/
+    .list-brand{
+        flex-direction: column;
+    }
+    .list-brand .logobrand{
+        margin-bottom: 20px;
+        height: 40px;
+    }
+    /*end brand section*/
     
 }
 
@@ -2275,6 +2602,35 @@ img{
     .advantages-slide .block-info{
         flex-basis: 70%;
     }
+
+
+    /*begin services*/
+    .service-item .item-title>*{
+        font-size: 16px;
+        margin: 0;
+    }
+    .service-item .item-text{
+        margin-top: 0;
+    }
+    .service-item{
+        padding: 0;
+    }
+    /*end services*/
+
+    /*begin reviews*/
+    .review-item .name{
+        font-size: 16px;
+    }
+    /*end reviews*/
+    /*footer begin*/
+    .footer-menu ul{
+        flex-direction: column;
+    }
+    .footer-menu ul li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    /*end footer*/
 }
 
 @media screen and (max-width: 375px){
@@ -2310,6 +2666,16 @@ img{
 }
 
 @media screen and (max-width: 320px){
+    /*header begin*/
+    .header-middle-inner .right-block a{
+        font-size: 11px;
+    }
+    .hidden-block .mobile-menu, .bottom-mobile{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*end header*/
+    /*begin topslider*/
     .topslider .slide .info .info-title > *{
         font-size: 17px;
     }
@@ -2317,4 +2683,24 @@ img{
         font-size: 12px;
         max-width: 240px;
     }
+
+    /*end topslider*/
+
+    /*begin happyclients*/
+    
+    .quantity-clients p{
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .quantity-clients p span{
+        font-size: 20px;
+    }
+    .question p{
+        font-size: 13px;
+    }
+    .red-btn, .white-btn, .green-btn, .disable{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    /*end happyclients*/
 }

@@ -78,11 +78,33 @@ function reviewsSlider(){
         infinite:true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
-        appendDots: jQuery('.reviews-slider-dots')
+        appendDots: jQuery('.reviews-slider-dots'),
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    variableWidth:false
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false
+                }
+            }
+        ]
     });
 }
 
@@ -122,6 +144,33 @@ function pricesSlider(){
     });
 }
 
+function mobileMenuOpen(){
+    let btn = jQuery('.mobile-block > .btn-menu');
+    let btnclose = jQuery('.top-mobile .btn-menu');
+    let hiddenBlock = jQuery('.hidden-block');
+    let menuContent = jQuery('.menu-content');
+    let hasChildrenItem = jQuery('.mobile-block .menu-item-has-children');
+    hasChildrenItem.each(function(i){
+        let submenu = hasChildrenItem.eq(i).children('.sub-menu');
+        hasChildrenItem.eq(i).click(function(){
+            submenu.slideToggle();
+        });
+    });
+    btn.click(function(){
+        hiddenBlock.addClass('open');
+        setTimeout(function(){
+            menuContent.addClass('show');
+        }, 50);
+    });
+    btnclose.click(function(){
+        
+        menuContent.removeClass('show');
+        setTimeout(function(){
+            hiddenBlock.removeClass('open');
+        }, 500);
+    });
+}
+
 jQuery(document).ready(function(){
     languageSelect();
     //subMenuOpen();
@@ -131,4 +180,5 @@ jQuery(document).ready(function(){
     topMenuHover();
     dataSlider();
     pricesSlider();
+    mobileMenuOpen();
 });
