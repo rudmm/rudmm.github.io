@@ -2654,6 +2654,7 @@ img{
     .advantages-slide{
         flex-direction: column;
         align-items: center;
+        justify-content: normal;
     }
     .advantages-slide .img-block{
         margin: 0;
