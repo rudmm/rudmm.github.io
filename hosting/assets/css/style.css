@@ -1197,6 +1197,54 @@ img{
 .nd .right-block{
     overflow: hidden;
     width: 900px;
+    position: relative;
+}
+.nd .right-block .slick-prev, .nd .right-block .slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 21;
+    width: 20px;
+    height: 70px;
+    outline: none;
+    border: none;
+    background: rgba(119,119,119,.3);
+    cursor: pointer;
+}
+.nd .right-block .slick-prev:after, .nd .right-block .slick-next:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nd .right-block .slick-disabled{
+    display: none!important;
+}
+.nd .right-block .slick-prev{
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nd .right-block .slick-next{
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nd .right-block .slick-next:after{
+    border-top: 10px solid transparent;
+    border-left: 10px solid rgba(0,0,0,.5);
+    border-right: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.nd .right-block .slick-prev:after{
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgba(0,0,0,.5);
+    border-left: 0px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 .price{
     width: 180px;
@@ -1278,9 +1326,6 @@ img{
 .btn-price a{
     width: 169px;
     height: 49px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
     transition: .3s all;
 }
 
@@ -2077,6 +2122,14 @@ img{
         padding: 0 20px;
     }
     /*end contact*/
+
+    /*begin nd-hosting*/
+    .nd .left-block .list-parametr ul li{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    /*end nd-hosting*/
+
 }
 
 @media screen and (max-width: 1024px){
@@ -2260,6 +2313,22 @@ img{
         margin-bottom: 20px;
     }
     /*end data slider*/
+    /*begin nd-hosting*/
+    .list-parametr-price ul li:nth-of-type(1){
+        min-height: 74px;
+    }
+    .nd .title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .nd{
+        padding-top: 40px;
+    }
+    .nd-description{
+        margin-bottom: 30px;
+    }
+    /*end nd-hosting*/
+
 }
 @media screen and (max-width: 992px){
     /*begin header middle*/
@@ -2574,6 +2643,23 @@ img{
         height: 370px;
     }
     /*end data slider*/
+    /*begin nd-hosting*/
+    .nd .title{
+        font-size: 29px;
+        line-height: 1.1;
+    }
+    .nd .left-block{
+        width: 30%;
+    }
+    .nd .right-block{
+        width: 70%;
+    }
+    .nd-hosting{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-size: 100% 50%;
+    }
+    /*end nd-hosting*/
 }
 
 @media screen and (max-width: 666px){
@@ -2618,6 +2704,28 @@ img{
     }   
     /*end data slider*/
     
+}
+
+@media screen and (max-width: 600px){
+    /*begin nd-hosting*/
+    .nd .left-block{
+        width: 50%;
+    }
+    .nd .right-block{
+        width: 50%;
+    }
+    .list-parametr-price ul li:nth-of-type(1), .nd .left-block .list-parametr ul li:nth-of-type(1){
+        min-height: auto;
+    }
+    /*end nd-hosting*/
+}
+@media screen and (max-width: 505px){
+    /*begin nd-hosting*/
+    .list-parametr-price ul li:nth-of-type(1), .nd .left-block .list-parametr ul li:nth-of-type(1){
+        min-height: 74px;
+        box-sizing: border-box;
+    }
+    /*end nd-hosting*/
 }
 
 @media screen and (max-width: 480px){
@@ -2694,6 +2802,13 @@ img{
         height: 200px;
     }   
     /*end data slider*/
+
+    /*begin nd-hosting*/
+    .nd .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    /*end nd-hosting*/
 }
 
 @media screen and (max-width: 375px){
@@ -2739,6 +2854,28 @@ img{
         display: none;
     }
     /*end data slider*/
+    /*begin nd-hosting*/
+    .nd .left-block .list-parametr ul li{
+        font-size: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .price .name{
+        font-size: 13px;
+    }
+    .list-parametr-price ul li:nth-of-type(1), .nd .left-block .list-parametr ul li:nth-of-type(1){
+        min-height: 68px;
+    }
+    .list-parametr-price ul li{
+        font-size: 12px;
+        height: 44px;
+    }
+    .btn-price a{
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
+    /*end nd-hosting*/
     
 }
 
@@ -2792,4 +2929,35 @@ img{
         margin: 0;
     }
     /*end data slider*/
+    /*begin nd-hosting*/
+    .nd .left-block .list-parametr ul li{
+        line-height: 1.3;
+    }
+    .list-parametr-price ul li{
+        height: 35px;
+    }
+    .btn-price a{
+        width: 110px;
+        font-size: 10px;
+        height: 35px;
+    }
+    .nd .right-block .slick-prev, .nd .right-block .slick-next{
+        height: 40px;
+    }
+    .nd .right-block .slick-next:after{
+        border-left: 5px solid rgba(0,0,0,.5);
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+    .nd .right-block .slick-prev:after{
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid rgba(0,0,0,.5);
+    }
+    .list-parametr-price ul li, .nd .left-block .list-parametr ul li{
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    /*end nd-hosting*/
 }
