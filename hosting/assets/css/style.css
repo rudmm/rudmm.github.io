@@ -1934,6 +1934,9 @@ img{
     text-align: center;
     color: #FFFFFF;
 }
+.star .star-title{
+    text-align: center;
+}
 .star-flex-wrapper .one{
     padding: 80px 120px 0;
     box-sizing: border-box;
@@ -1993,6 +1996,7 @@ img{
 .ssd-list .section-title.flex > h2{
     text-align: left;
     line-height: 1;
+    font-size: 37px;
 }
 .ssd-list .info-text{
     color: #94999E;
@@ -2056,6 +2060,9 @@ img{
     .topslider .slide .info{
         left: 11%;
     }
+    .nd-sub-1{
+        background-size: 100% 30%;
+    }
     
 }
 
@@ -2063,6 +2070,12 @@ img{
     .section-title, .services{
         margin-top: 70px;
         margin-bottom: 40px;
+    }
+    .section-title.left{
+        margin-top: 70px;
+    }
+    .best-features{
+        padding-bottom: 70px;
     }
 
     .advantages-slide .img-block{
@@ -2111,6 +2124,12 @@ img{
     .nd .left-block .list-parametr ul li{
         font-size: 14px;
         padding-left: 10px;
+    }
+    .nd-sub-1{
+        background-size: 100% 30%;
+    }
+    .virtual-server{
+        flex-basis: 24%;
     }
     /*end nd-hosting*/
 
@@ -2176,6 +2195,39 @@ img{
         top: 42%;
     }
     /*end nd info section*/
+
+    /*begin virtual flex*/
+    .virtual-list .item{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .virtual-flex{
+        padding: 70px 0;
+    }
+    /*end virtual flex*/
+
+    /*begin star*/
+    .star{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .star-flex-wrapper{
+        padding-bottom: 0;
+    }
+    .star-img{
+        top: 60%;
+    }
+    /*end star*/
+
+    /*nd-sub-2*/
+    .row-virtual-servers{
+        margin-bottom: 70px;
+    }
+    /*nd-sub-2*/
+
+    .ssd-list .item .ssd-img.p45{
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -2192,7 +2244,7 @@ img{
     .language-wrapper ul li a{
         font-size: 13px;
     }
-
+    
     /*end header top*/
 
     /*begin header middle*/
@@ -2257,7 +2309,29 @@ img{
         line-height: 1;
         margin-bottom: 15px;
     }
-    .nd-description, .topslider .slide .info .info-description, .advantages-slide .info-description, .service-item .item-text, .review-item .review p, .company-text p, .contract-list ol > li > ol > li, .data-info p, .contact-text, .contact-flex .item-text, .left-block .list-parametr ul li, .price .name, .price .dollar, .list-parametr-price ul li, .arrows-image-wrapper .info .title, .arrows-image-wrapper .info .text, .plus-description{
+    .nd-description, 
+    .topslider .slide .info .info-description, 
+    .advantages-slide .info-description, 
+    .service-item .item-text, 
+    .review-item .review p, 
+    .company-text p, 
+    .contract-list ol > li > ol > li, 
+    .data-info p, 
+    .contact-text, 
+    .contact-flex 
+    .item-text, 
+    .left-block .list-parametr ul li, 
+    .price .name, .price .dollar, 
+    .list-parametr-price ul li, 
+    .arrows-image-wrapper .info .title, 
+    .arrows-image-wrapper .info .text, 
+    .plus-description, 
+    .virtual-list .item-text, 
+    .virtual-list .item-title, 
+    .best-item-text, 
+    .star .star-title, 
+    .star .star-text,
+    .ssd-list .info-text{
         font-size: 15px;
     }
     .topslider .slide .info .info-description{
@@ -2333,7 +2407,7 @@ img{
     /*end company*/
 
     #navmenu ul li a:after{
-        bottom: -11px;
+        bottom: -12px;
     }
 
     /*begin contract*/
@@ -2372,6 +2446,48 @@ img{
     }
     .nd-description{
         margin-bottom: 30px;
+    }
+    .row-virtual-servers{
+        flex-wrap: wrap;
+    }
+    .vs-title> *{
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .vs-price-inner{
+        padding: 10px 0;
+    }
+    .vs-price-inner .number{
+        font-size: 45px;
+    }
+    .vs-price-inner .bottom{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .vs-price-wrapper{
+        margin-bottom: 15px;
+    }
+    .vs-item-title, .vs-item-text{
+        font-size: 13px;
+    }
+    .vs-item-swith{
+        width: 130px;
+    }
+    .vs-item{
+        margin-bottom: 10px;
+    }
+    .vs-item.btn-item a{
+        font-size: 13px;
+        line-height: 16px;
+        height: 42px;
+        width: 150px;
+    }
+    .vs-item.btn-item{
+        justify-content: center;
+    }
+    .row-virtual-servers{
+        margin-bottom: 40px;
     }
     /*end nd-hosting*/
 
@@ -2456,6 +2572,71 @@ img{
         margin-top: 20px;
     }
     /*end plus section*/
+    /*begin virtual flex*/
+    .virtual-list .item{
+        flex-basis: 250px;
+    }
+    .virtual-flex{
+        padding: 70px 0;
+    }
+    .virtual-list .item-title{
+        margin-top: 10px;
+    }
+    /*end virtual flex*/
+
+    /*best features*/
+
+    .section-title.left{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .best-features{
+        padding-bottom: 40px;
+    }
+    /*end features*/
+    /*begin star*/
+    .star{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .star-flex-wrapper .one, .star-flex-wrapper .three{
+        padding: 40px 60px 0;
+    }
+    .star-ico{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .star-item.center{
+        margin-top: -50px;
+    }
+    .star-img{
+        width: 300px;
+        height: auto;
+    }
+    /*end star*/
+
+    /*begin ssd-flex*/
+    .ssd-list .section-title.flex>h2{
+        font-size: 32px;
+    }
+    .ssd-list .section-title.flex{
+        margin-top: 40px;
+    }
+    .ssd-list .info-text{
+        margin-top: 10px;
+    }
+    .ssd-list .info-btn{
+        margin-top: 10px;
+    }
+    .ssd-list .item .ssd-img{
+        margin-right: 30px;
+    }
+    .ssd-list .item.reverse .ssd-img{
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    /*end ssd flex*/
 }
 @media screen and (max-width: 992px){
     /*begin header middle*/
@@ -2532,6 +2713,66 @@ img{
         margin-bottom: 20px;
     }
     /*end configuration*/
+
+    /*begin nd*/
+    .row-virtual-servers{
+        flex-wrap: wrap;
+    }
+    .virtual-server{
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        width: 270px;
+        flex-basis: auto;
+    }
+    .row-virtual-servers{
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+    .nd-sub-1{
+        background-size: 100% 20%;
+    }
+    /*end nd*/
+    /*begin star*/
+    .star-flex-wrapper .one, .star-flex-wrapper .three{
+        padding: 40px 0px 0;
+    }
+    .star-item.center{
+        margin-top: -50px;
+    }
+    /*end star*/
+
+    /*begin ssd-flex*/
+    .ssd-list .item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ssd-list .item .ssd-img{
+        flex-basis: auto;
+        margin: 0;
+        width: 100%;
+        max-width: 520px;
+    }
+    .ssd-list .item .info-wrapper{
+        flex-basis: auto;
+        width: 100%;
+        max-width: 520px;
+    }
+    .ssd-list .item{
+        margin-bottom: 30px;
+    }
+    .ssd-list .item.reverse{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .ssd-list .item.reverse .ssd-img{
+        margin: 0;
+    }
+    .ssd-list .item .ssd-img.p45{
+        padding: 0;
+    }
+    /*end ssd flex*/
+
 }
 @media screen and (max-width: 820px){
     .advantages-slide{
@@ -2549,6 +2790,48 @@ img{
          margin-top: 10px;
      }
      /*end happyclients section*/
+     .nd-sub-1{
+         background-size: 100% 25%;
+     }
+     .virtual-server{
+         margin-left: 30px;
+         margin-right: 30px;
+     }
+
+     /*begin star*/
+    .star-flex-wrapper .one, .star-flex-wrapper .three{
+        padding: 0;
+    }
+    .star-item.center{
+        margin-top: 0px;
+    }
+    .star-flex-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .star-img{
+        position: static;
+        transform: none;
+        display: none;
+    }
+    .star-row{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .star-flex-wrapper .two{
+        margin-top: 0;
+    }
+    .star-item{
+        flex-basis: auto;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    .logo-wthite{
+        order: 3;
+    }
+    /*end star*/
 }
 @media screen and (max-width: 767px){
     .top-nav-wrapper{
@@ -2799,6 +3082,20 @@ img{
         padding-bottom: 20px;
         background-size: 100% 50%;
     }
+    .nd-sub-1{
+        background-size: 100% 20%;
+    }
+    .virtual-server{
+        margin: 0;
+        margin-bottom: 40px;  
+    }
+    .row-virtual-servers{
+        justify-content: space-around;
+    }
+    .virtual-server{
+        width: auto;
+        flex-basis: 40%;
+    }
     /*end nd-hosting*/
     /*begin configuration*/
     .configuration-list{
@@ -2866,6 +3163,56 @@ img{
         flex-basis: 50%;
     }
     /*end plus section*/
+
+    /*begin virtual flex*/
+    .virtual-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .virtual-list .item{
+        flex-basis: auto;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+    .virtual-list .item:last-of-type{
+        margin-bottom: 0;
+    }
+
+    /*best features*/
+
+    .section-title.left{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .best-features{
+        padding-bottom: 20px;
+    }
+    .best-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-flex .item-best-img{
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .best-flex .item-best-list{
+        width: auto;
+    }
+    .best-item-img{
+        min-width: 30px;
+    }
+    /*end features*/
+
+    /*begin ssd-list*/
+    .ssd-list .section-title.flex>h2{
+        font-size: 27px;
+    }
+    .ssd-list .section-title.flex{
+        margin-top: 20px;
+    }
+    /*end ssd-list*/
 }
 
 @media screen and (max-width: 666px){
@@ -2924,6 +3271,17 @@ img{
         min-height: auto;
     }
     /*end nd-hosting*/
+}
+@media screen and (max-width: 550px){
+    .nd-sub-1{
+        background-size: 100% 15%;
+    }
+    .row-virtual-servers{
+        justify-content: center;
+    }
+    .virtual-server{
+        flex-basis: 270px;
+    }
 }
 @media screen and (max-width: 505px){
     /*begin nd-hosting*/
@@ -3014,12 +3372,26 @@ img{
         font-size: 22px;
         margin-bottom: 10px;
     }
+    .nd-sub-2{
+        background-size: 100% 12%;
+    }
+    .nd-sub-2 .title{
+        margin-bottom: 30px;
+    }
     /*end nd-hosting*/
     /*begin plus section*/
     .plus-flex .item{
         flex-basis: 100%;
     }
     /*end plus section*/
+    .logo-wthite{
+        max-width: 150px;
+    }
+    /*begin ssd-list*/
+    .ssd-list .section-title.flex>h2{
+        font-size: 21px;
+    }
+    /*end ssd-list*/
 }
 
 @media screen and (max-width: 375px){
@@ -3086,8 +3458,13 @@ img{
         height: 40px;
         font-size: 12px;
     }
+    .nd-sub-1{
+        background-size: 100% 17%;
+    }
     /*end nd-hosting*/
-    
+    .virtual-flex{
+        padding: 40px 0;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -3169,6 +3546,9 @@ img{
         min-height: 50px;
         display: flex;
         align-items: center;
+    }
+    .nd-sub-1{
+        background-size: 100% 20%;
     }
     /*end nd-hosting*/
 }
