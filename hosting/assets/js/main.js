@@ -220,6 +220,75 @@ function mobileMenuOpen(){
     });
 }
 
+function dedicatedSlider(){
+    let slider = jQuery('.nd-dedicated .dedicated-wrapper .bottom-dedicated');
+    slider.slick({
+        arrows: true,
+        slidesToShow: 6,
+        vertical: true,
+        infinite: false,
+        draggable: false,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 910,
+                settings: {
+                    slidesToShow: 3,
+                    vertical: false,
+                    draggable: true
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false,
+                    draggable: true
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    vertical: false,
+                    draggable: true
+                }
+            }
+        ]
+    });
+}
+
+
+
+function detailsOpen(){
+    let btnList = jQuery('.details a');
+    let priceDetailsList = jQuery('.price-details');
+    let btnclose = jQuery('.btn-menu.open.details-btn');
+    btnList.each(function(i){
+        let btn = btnList.eq(i);
+        btn.click(function(e){
+            e.preventDefault();
+            let id = btn.attr('href');
+            let details = jQuery(id);
+            detailsClose(priceDetailsList);
+            details.addClass('active');
+        });
+    });
+    btnclose.each(function(i){
+        let btn = btnclose.eq(i);
+        btn.click(function(){
+            detailsClose(priceDetailsList);
+        });
+    });
+}
+
+function detailsClose(list){
+    list.each(function(i){
+        list.eq(i).removeClass('active');
+    });
+}
+
 jQuery(document).ready(function(){
     languageSelect();
     //subMenuOpen();
@@ -230,4 +299,6 @@ jQuery(document).ready(function(){
     dataSlider();
     pricesSlider();
     mobileMenuOpen();
+    dedicatedSlider();
+    detailsOpen();
 });
