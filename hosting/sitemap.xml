@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with www.majento.ru -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>https://vpslc.com/</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/company.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/contact.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/contract.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/data-center.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/dedicated.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/domen.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/hosting-sub1.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/hosting-sub2.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/hosting-sub3.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/index.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://vpslc.com/stock.html</loc>
+	<lastmod>2020-06-04T18:47:55+04:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+</urlset>
