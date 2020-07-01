@@ -423,13 +423,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 }
             ],
             OS: ['Linux'],
@@ -487,13 +487,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 },
             ],
             OS: ['Windows','Linux'],
@@ -563,13 +563,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 }
             ],
             OS: ['Windows','Linux'],
@@ -644,13 +644,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 }
             ],
             OS: ['Windows','Linux'],
@@ -725,13 +725,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 }
             ],
             OS: ['Windows','Linux'],
@@ -817,13 +817,13 @@ function tariffCustomize(idTariff=null){
                 },
                 {
                     title: '6 месяцев',
-                    procentPromo: 6,
-                    items:6
+                    procentPromo: 5,
+                    items:5
                 },
                 {
                     title: '12 месяцев',
-                    procentPromo: 12,
-                    items:12
+                    procentPromo: 10,
+                    items:10
                 }
             ],
             OS: ['Windows','Linux'],
