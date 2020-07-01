@@ -3882,7 +3882,7 @@ img{
 }
 @media screen and (max-width: 550px){
     .nd-sub-1{
-        background-size: 100% 15%;
+        background-size: 100% 18%;
     }
     .row-virtual-servers{
         justify-content: center;
@@ -4272,7 +4272,7 @@ img{
         align-items: center;
     }
     .nd-sub-1{
-        background-size: 100% 20%;
+        background-size: 100% 24%;
     }
     /*end nd-hosting*/
 
