@@ -1523,7 +1523,7 @@ img{
     background: #FFFFFF;
     box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.08), 0px 16px 16px rgba(50, 50, 71, 0.05);
     border-radius: 5px;
-    flex-basis: 279px;
+    flex-basis: 320px;
     display: flex;
     flex-direction: column;
     padding: 0 15px 15px;
@@ -1587,11 +1587,23 @@ img{
     font-size: 18px;
     line-height: 28px;
 }
+.vs-price-inner .bottom p{
+    text-align: center;
+}
+.vs-price-inner .bottom p:first-of-type{
+    display: none;
+}
+.vs-price-inner .bottom .view{
+    display: block!important;
+}
 .vs-item{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
+}
+.vs-item.dos .vs-item-swith{
+    margin-left: 10px;
 }
 .vs-item-prev-btn{
     margin-bottom: 44px;
@@ -2396,7 +2408,7 @@ img{
         background-size: 100% 30%;
     }
     .virtual-server{
-        flex-basis: 24%;
+        /* flex-basis: 24%; */
     }
     /*end nd-hosting*/
 
@@ -2769,6 +2781,9 @@ img{
     }
     .row-virtual-servers{
         margin-bottom: 40px;
+    }
+    .virtual-server{
+        flex-basis: 31%;
     }
     /*end nd-hosting*/
 
@@ -3840,6 +3855,13 @@ img{
     .bottom-details-list.first{
         order: 1;
     }
+    .row-virtual-servers{
+        flex-direction: column;
+        align-items: center;
+    }
+    .virtual-server{
+        max-width: 320px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -4092,7 +4114,7 @@ img{
         font-size: 12px;
     }
     .nd-sub-1{
-        background-size: 100% 17%;
+        background-size: 100% 20%;
     }
     /*end nd-hosting*/
     .virtual-flex{

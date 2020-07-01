@@ -999,9 +999,13 @@ function priceValue(id, tariff){
     for(let i=0;i<termArray.length;i++){
         if(termArray[i].title === vsTermValue){
             let items = termArray[i].items;
+            let pr = vs.find('.vs-price-inner .bottom p:first-of-type');
             if(items === 1){
+                pr.removeClass('view');
                 break;
             }
+            pr.text('Скидка '+termArray[i].items+' %');
+            pr.addClass('view');
             price = price * items;
             price = price - (price/100*items);
         }
@@ -1040,6 +1044,20 @@ function hoverDos(){
     });
 }
 
+function dosHoverOut(){
+    let hoverInfo1 = jQuery('.hover-info-1');
+    let hoverInfo2 = jQuery('.hover-info-2');
+    hoverInfo1.each(function(i){
+        hoverInfo1.eq(i).click(function(){
+            hoverInfo1.eq(i).removeClass('view');
+        });
+    });
+    hoverInfo2.each(function(i){
+        hoverInfo2.eq(i).click(function(){
+            hoverInfo2.eq(i).removeClass('view');
+        });
+    });
+}
 jQuery(document).ready(function(){
     languageSelect();
     //subMenuOpen();
@@ -1057,6 +1075,7 @@ jQuery(document).ready(function(){
     tariffCustomize();  
     mobileLanguageSwitch();
     hoverDos();
+    dosHoverOut();
     window.happyclientsSection = jQuery('.happyclients');
     if(window.happyclientsSection){
         window.headerHeight = jQuery('.top-nav-wrapper').innerHeight() + jQuery('.header-middle').innerHeight() + jQuery('.navbar').innerHeight();
