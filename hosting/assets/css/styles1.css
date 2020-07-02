@@ -1874,6 +1874,7 @@ img{
 }
 .vs-price-inner .bottom p:first-of-type{
     display: none;
+    font-size: 13px;
 }
 .vs-price-inner .bottom .view{
     display: block!important;

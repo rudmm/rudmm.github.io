@@ -400,7 +400,7 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '5 000 Mb',
+                    title: '5 GB',
                     addPrice: 0
                 }
             ],
@@ -424,12 +424,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 }
             ],
             OS: ['Linux'],
@@ -459,11 +459,11 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '20 000 Mb',
+                    title: '20 GB',
                     addPrice: 0
                 },
                 {
-                    title: '40 000 Mb',
+                    title: '40 GB',
                     addPrice: 0.92,
                     addPriceNVMe: 1.73,
                 }
@@ -488,12 +488,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 },
             ],
             OS: ['Windows','Linux'],
@@ -530,16 +530,16 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '20 000 Mb',
+                    title: '20 GB',
                     addPrice: 0
                 },
                 {
-                    title: '40 000 Mb',
+                    title: '40 GB',
                     addPrice: 1.06,
                     addPriceNVMe: 2.00,
                 },
                 {
-                    title: '60 000 Mb',
+                    title: '60 GB',
                     addPrice: 2.12,
                     addPriceNVMe: 4.00
                 }
@@ -564,12 +564,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 }
             ],
             OS: ['Windows','Linux'],
@@ -606,21 +606,21 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '40 000 Mb',
+                    title: '40 GB',
                     addPrice: 0
                 },
                 {
-                    title: '60 000 Mb',
+                    title: '60 GB',
                     addPrice: 1.05,
                     addPriceNVMe: 1.96,
                 },
                 {
-                    title: '80 000 Mb',
+                    title: '80 GB',
                     addPrice: 2.10,
                     addPriceNVMe: 3.92
                 },
                 {
-                    title: '100 000 Mb',
+                    title: '100 GB',
                     addPrice: 3.15,
                     addPriceNVMe: 5.89
                 }
@@ -645,12 +645,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 }
             ],
             OS: ['Windows','Linux'],
@@ -687,21 +687,21 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '60 000 Mb',
+                    title: '60 GB',
                     addPrice: 0
                 },
                 {
-                    title: '80 000 Mb',
+                    title: '80 GB',
                     addPrice: 1.24,
                     addPriceNVMe: 2.32,
                 },
                 {
-                    title: '100 000 Mb',
+                    title: '100 GB',
                     addPrice: 2.48,
                     addPriceNVMe: 4.64
                 },
                 {
-                    title: '120 000 Mb',
+                    title: '120 GB',
                     addPrice: 3.71,
                     addPriceNVMe: 6.97
                 }
@@ -726,12 +726,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 }
             ],
             OS: ['Windows','Linux'],
@@ -764,36 +764,36 @@ function tariffCustomize(idTariff=null){
             ],
             variableDiskMemory: [
                 {
-                    title: '80 000 Mb',
+                    title: '80 GB',
                     addPrice: 0
                 },
                 {
-                    title: '100 000 Mb',
+                    title: '100 GB',
                     addPrice: 1.28,
                     addPriceNVMe: 2.4,
                 },
                 {
-                    title: '120 000 Mb',
+                    title: '120 GB',
                     addPrice: 2.55,
                     addPriceNVMe: 4.79
                 },
                 {
-                    title: '140 000 Mb',
+                    title: '140 GB',
                     addPrice: 3.83,
                     addPriceNVMe: 7.19
                 },
                 {
-                    title: '160 000 Mb',
+                    title: '160 GB',
                     addPrice: 5.11,
                     addPriceNVMe: 9.58
                 },
                 {
-                    title: '180 000 Mb',
+                    title: '180 GB',
                     addPrice: 6.39,
                     addPriceNVMe: 11.98
                 },
                 {
-                    title: '200 000 Mb',
+                    title: '200 GB',
                     addPrice: 7.66,
                     addPriceNVMe: 14.37
                 }
@@ -818,12 +818,12 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:5
+                    items:6
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:10
+                    items:12
                 }
             ],
             OS: ['Windows','Linux'],
@@ -999,17 +999,21 @@ function priceValue(id, tariff){
     for(let i=0;i<termArray.length;i++){
         if(termArray[i].title === vsTermValue){
             let items = termArray[i].items;
+            let procentPromo = termArray[i].procentPromo;
             let pr = vs.find('.vs-price-inner .bottom p:first-of-type');
             if(items === 1){
                 pr.removeClass('view');
                 break;
             }
-            pr.text('Скидка '+termArray[i].items+' %');
+            pr.text('Скидка '+termArray[i].procentPromo+' %');
             pr.addClass('view');
             price = price * items;
-            price = price - (price/100*items);
+            price = price - (price/100*procentPromo);
         }
     }
+    price *=100;
+    price = Math.ceil(price);
+    price /=100;
     price +='.00'; 
     let priceArray = price.split('.');
     priceArray[1] = priceArray[1].substr(0,2);
