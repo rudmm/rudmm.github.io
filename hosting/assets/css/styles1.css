@@ -1786,7 +1786,7 @@ img{
             box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.08), 0px 16px 16px rgba(50, 50, 71, 0.05);
     border-radius: 5px;
     -ms-flex-preferred-size: 320px;
-        flex-basis: 320px;
+        flex-basis: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1797,6 +1797,15 @@ img{
     padding: 0 15px 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+.nd-sub-1 .virtual-server{
+    flex-basis: 320px;
+}
+.nd-sub-3 .row-virtual-servers{
+    justify-content: space-around;
+}
+.nd-sub-3 .virtual-server{
+    flex-basis: 320px;
 }
 .vs-title> *{
     font-weight: 600;
@@ -3217,7 +3226,7 @@ img{
     .row-virtual-servers{
         margin-bottom: 40px;
     }
-    .virtual-server{
+    .nd-sub-1 .virtual-server{
         -ms-flex-preferred-size: 31%;
             flex-basis: 31%;
     }
@@ -3746,6 +3755,9 @@ img{
         padding: 10px;
         height: auto;
     }
+    .nd-sub-3 .row-virtual-servers{
+        flex-wrap: nowrap;
+    }
 }
 @media screen and (max-width: 820px){
     .advantages-slide{
@@ -3821,6 +3833,7 @@ img{
             -ms-flex-order: 3;
                 order: 3;
     }
+    
     /*end star*/
 }
 @media screen and (max-width: 767px){
@@ -4136,6 +4149,12 @@ img{
         width: auto;
         -ms-flex-preferred-size: 40%;
             flex-basis: 40%;
+    }
+    .nd-sub-3 .row-virtual-servers{
+        flex-wrap: wrap;
+    }
+    .nd-sub-3 .row-virtual-servers .virtual-server{
+        flex-basis: 240px;
     }
     /*end nd-hosting*/
     /*begin configuration*/

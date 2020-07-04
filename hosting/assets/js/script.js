@@ -337,7 +337,7 @@ function happyclients(){
 }
 
 function switchMemory(){
-    let switchMemory = jQuery('.vs-item-swith');
+    let switchMemory = jQuery('.nd-sub-1 .vs-item-swith');
     if(switchMemory){
         switchMemory.each(function(i){
             if(switchMemory.eq(i).hasClass('disable') && switchMemory.eq(i).parent().hasClass('dos')){
@@ -848,7 +848,7 @@ function tariffCustomize(idTariff=null){
         let port = tariff[i].variablePorts;
         let cart = tariff[i].variableCart;
         let OS = tariff[i].OS;
-        let vs = jQuery('.virtual-server');
+        let vs = jQuery('.nd-sub-1 .virtual-server');
         vs.each(function(i){
             let strClass = 'js-id-'+id;
             if(vs.eq(i).hasClass(strClass)){
@@ -1027,7 +1027,7 @@ function priceValue(id, tariff){
 }
 
 function hoverDos(){
-    let items = jQuery('.vs-item.dos .vs-item-swith');
+    let items = jQuery('.nd-sub-1 .vs-item.dos .vs-item-swith');
     items.each(function(i){
         let item = items.eq(i);
         let info1 = item.find('.hover-info-1');
@@ -1062,6 +1062,398 @@ function dosHoverOut(){
         });
     });
 }
+
+function switchMemorySpeed(){
+    let switchMemory = jQuery('.nd-sub-2 .vs-item-swith');
+    if(switchMemory){
+        switchMemory.each(function(i){
+            let btns = switchMemory.eq(i).children('a');
+            btns.each(function(i){
+                let btn = btns.eq(i);
+                btn.click(function(e){
+                    e.preventDefault();
+                    if(btn.hasClass('on')){
+                        return;
+                    }else{
+                        btn.addClass('on');
+                        btn.prev('a').removeClass('on');
+                        btn.next('a').removeClass('on');
+                        let prices = btn.parents('.virtual-server').find('.top');
+                        prices.each(function(index){
+                            prices.eq(index).toggleClass('top-2');
+                        });
+                        let names = btn.parents('.virtual-server').find('.vs-title');
+                        names.each(function(index){
+                            names.eq(index).toggleClass('vs-title-2');
+                        });
+                        let links = btn.parents('.virtual-server').find('.vs-item.btn-item a');
+                        links.each(function(index){
+                            links.eq(index).toggleClass('btn-2');
+                        });
+                    }
+                });
+            });
+        });
+    }
+    
+}
+
+function tariffBigSSD(idTariff=null){
+    let tariff = [
+        {
+            id:1,
+            name: 'LC-BIG SSD 1',
+            defaultPrice: '9.50',
+            variableCPU: [
+                {
+                    title: '1 ядро Intel Xeon',
+                    addPrice: 0
+                },
+                {
+                    title: '2 ядра Intel Xeon',
+                    addPrice: 0.65
+                }
+            ],
+            variableMemory: [
+                {
+                    title: '2048 Mb',
+                    addPrice: 0 
+                },
+                {
+                    title: '3072 Mb',
+                    addPrice: 0.21 
+                },
+                {
+                    title: '4096 Mb',
+                    addPrice: 0.42 
+                }
+            ],
+            variableDiskMemory: [
+                {
+                    title: '100 GB',
+                    addPrice: 0
+                },
+                {
+                    title: '120 GB',
+                    addPrice: 1.11
+                },
+                {
+                    title: '140 GB',
+                    addPrice: 2.22
+                },
+                {
+                    title: '160 GB',
+                    addPrice: 3.34
+                },
+                {
+                    title: '180 GB',
+                    addPrice: 4.45
+                },
+                {
+                    title: '200 GB',
+                    addPrice: 5.56
+                }
+            ],
+            variablePorts: [
+                {
+                    title: '250 Mbps',
+                    addPrice:0
+                }
+            ],
+            variableCart: [
+                {
+                    title: '1 месяц',
+                    procentPromo: 0,
+                    items:1
+                },
+                {
+                    title: '3 месяця',
+                    procentPromo: 3,
+                    items: 3
+                },
+                {
+                    title: '6 месяцев',
+                    procentPromo: 5,
+                    items:6
+                },
+                {
+                    title: '12 месяцев',
+                    procentPromo: 10,
+                    items:12
+                }
+            ],
+            OS: ['Windows','Linux']
+        },
+        {
+            id:2,
+            name: 'LC-BIG SSD 2',
+            defaultPrice: '27.30',
+            variableCPU: [
+                {
+                    title: '2 ядра Intel Xeon',
+                    addPrice: 0
+                },
+                {
+                    title: '3 ядра Intel Xeon',
+                    addPrice: 0.74
+                },
+                {
+                    title: '4 ядра Intel Xeon',
+                    addPrice: 1.49
+                }
+            ],
+            variableMemory: [
+                {
+                    title: '4096 Mb',
+                    addPrice: 0 
+                },
+                {
+                    title: '6144 Mb',
+                    addPrice: 0.48 
+                },
+                {
+                    title: '8192 Mb',
+                    addPrice: 0.95 
+                }
+            ],
+            variableDiskMemory: [
+                {
+                    title: '300 GB',
+                    addPrice: 0
+                },
+                {
+                    title: '320 GB',
+                    addPrice: 1.26
+                },
+                {
+                    title: '340 GB',
+                    addPrice: 2.54
+                },
+                {
+                    title: '360 GB',
+                    addPrice: 3.80
+                },
+                {
+                    title: '380 GB',
+                    addPrice: 5.07
+                },
+                {
+                    title: '400 GB',
+                    addPrice: 6.34
+                }
+            ],
+            variablePorts: [
+                {
+                    title: '500 Mbps',
+                    addPrice:0
+                }
+            ],
+            variableCart: [
+                {
+                    title: '1 месяц',
+                    procentPromo: 0,
+                    items:1
+                },
+                {
+                    title: '3 месяця',
+                    procentPromo: 3,
+                    items: 3
+                },
+                {
+                    title: '6 месяцев',
+                    procentPromo: 5,
+                    items:6
+                },
+                {
+                    title: '12 месяцев',
+                    procentPromo: 10,
+                    items:12
+                }
+            ],
+            OS: ['Windows','Linux']
+        }
+    ];
+    if(idTariff){
+        for(let i=0;i<tariff.length;i++){
+            if(tariff[i].id===idTariff){
+                return tariff[i];
+            }
+        }
+    }
+    for(let i=0;i<tariff.length;i++){
+        let id = tariff[i].id;
+        let name =tariff[i].name;
+        let price = tariff[i].defaultPrice;
+        let cpu = tariff[i].variableCPU;
+        let memory = tariff[i].variableMemory;
+        let diskMemory = tariff[i].variableDiskMemory;
+        let port = tariff[i].variablePorts;
+        let cart = tariff[i].variableCart;
+        let OS = tariff[i].OS;
+        let vs = jQuery('.nd-sub-3 .virtual-server');
+        vs.each(function(i){
+            let strClass = 'js-big-ssd-'+id;
+            if(vs.eq(i).hasClass(strClass)){
+                let vsItem = vs.eq(i);
+                let vsTitle = vsItem.find('.vs-title h3');
+                vsTitle.html('VDS/VPS «'+name+'»');
+                let arrayPrice = price.split('.');
+                let vsDollar = vsItem.find('.vs-price-inner .top .number p');
+                let vsCent = vsItem.find('.vs-price-inner .top .cent p');
+                vsDollar.html(arrayPrice[0]);
+                vsCent.html('.'+arrayPrice[1]);
+                let vsCPU = vsItem.find('.vs-item.cpu .vs-item-text p .text');
+                vsCPU.html(cpu[0].title);
+                if(cpu.length > 1){
+                    vsCPU.parent().find('.arrow').addClass('view');
+                }
+                let vsMemory = vsItem.find('.vs-item.memory .vs-item-text p .text');
+                vsMemory.html(memory[0].title);
+                if(memory.length > 1){
+                    vsMemory.parent().find('.arrow').addClass('view');
+                }
+                let vsMemoryDisk = vsItem.find('.vs-item.disk .vs-item-text p .text');
+                vsMemoryDisk.html(diskMemory[0].title);
+                if(diskMemory.length > 1){
+                    vsMemoryDisk.parent().find('.arrow').addClass('view');
+                }
+                let vsPort = vsItem.find('.vs-item.port .vs-item-text p .text');
+                vsPort.html(port[0].title);
+                if(port.length > 1){
+                    vsPort.parent().find('.arrow').addClass('view');
+                }
+                let vsTerm = vsItem.find('.vs-item.term .vs-item-text p .text');
+                vsTerm.html(cart[0].title);
+                if(cart.length > 1){
+                    vsTerm.parent().find('.arrow').addClass('view');
+                }
+                let vsOS = vsItem.find('.vs-item.os .vs-item-text p');
+                vsOS.html(OS.join(', '));
+            }
+        });
+    }
+
+    let arrows = jQuery('.vs-item .arrow');
+    arrows.each(function(i){
+        let arrow = arrows.eq(i);
+        if(arrow.hasClass('view')){
+            arrow.click(function(){
+                let vs = arrow.parents('.virtual-server');
+                let classes = vs.attr('class').split(' ');
+                let id = parseInt(classes[1].substr(11), 10);
+                let type = arrow.parents('.vs-item');
+                for(let i=0;i<tariff.length;i++){
+                    let currentTariff;
+                    if(tariff[i].id === id){
+                        currentTariff = tariff[i];
+                        let variants;
+                        if(type.hasClass('cpu')){
+                            variants = currentTariff.variableCPU;
+                        }else if(type.hasClass('memory')){
+                            variants = currentTariff.variableMemory;
+                        }else if(type.hasClass('disk')){
+                            variants = currentTariff.variableDiskMemory;
+                        }else if(type.hasClass('port')){
+                            variants = currentTariff.variablePorts;
+                        }else if(type.hasClass('term')){
+                            variants = currentTariff.variableCart;
+                        }
+                        
+                        if(arrow.hasClass('left')){
+                            let index;
+                            for(let y=0;y < variants.length;y++){
+                                if(variants[y].title === arrow.next('.text').text()){
+                                    index = y;
+                                }
+                            }
+                            if(index > 0){
+                                arrow.next('.text').text(variants[index-1].title);
+                            }
+                            priceValueSSD(id,currentTariff);
+                        }
+                        if(arrow.hasClass('right')){
+                            let index;
+                            for(let y=0;y < variants.length;y++){
+                                if(variants[y].title === arrow.prev('.text').text()){
+                                    index = y;
+                                }
+                            }
+                            if(index < variants.length-1){
+                                arrow.prev('.text').text(variants[index+1].title);
+                            }
+                            priceValueSSD(id,currentTariff);
+                        }
+                    }
+                }
+            });
+        }
+    });
+}
+
+function priceValueSSD(id, tariff){
+    let str = '.js-big-ssd-'+id;
+    let vs = jQuery(str);
+    let price = parseFloat(tariff.defaultPrice, 10);
+    let vsCPUValue = vs.find('.cpu .text').text();
+    let cpuArray = tariff.variableCPU;
+    for(let i=0;i<cpuArray.length;i++){
+        if(cpuArray[i].title === vsCPUValue){
+            price += cpuArray[i].addPrice;
+        }
+    }
+    let vsMemoryValue = vs.find('.memory .text').text();
+    let memoryArray = tariff.variableMemory;
+    for(let i=0;i<memoryArray.length;i++){
+        if(memoryArray[i].title === vsMemoryValue){
+            price += memoryArray[i].addPrice;
+            
+        }
+    }
+    let vsDiskMemoryValue = vs.find('.disk .text').text();
+    let diskMemoryArray = tariff.variableDiskMemory;
+    for(let i=0;i<diskMemoryArray.length;i++){
+        if(diskMemoryArray[i].title === vsDiskMemoryValue){
+            price += diskMemoryArray[i].addPrice;
+        }
+    }
+    let vsPortValue = vs.find('.port .text').text();
+    let portsArray = tariff.variablePorts;
+    for(let i=0;i<portsArray.length;i++){
+        if(portsArray[i].title === vsPortValue){
+            price += portsArray[i].addPrice;
+        }
+    }
+    let vsTermValue = vs.find('.term .text').text();
+    let termArray = tariff.variableCart;
+    for(let i=0;i<termArray.length;i++){
+        if(termArray[i].title === vsTermValue){
+            let items = termArray[i].items;
+            let procentPromo = termArray[i].procentPromo;
+            let pr = vs.find('.vs-price-inner .bottom p:first-of-type');
+            if(items === 1){
+                pr.removeClass('view');
+                break;
+            }
+            pr.text('Скидка '+termArray[i].procentPromo+' %');
+            pr.addClass('view');
+            price = price * items;
+            price = price - (price/100*procentPromo);
+        }
+    }
+    price *=100;
+    price = Math.ceil(price);
+    price /=100;
+    price +='.00'; 
+    let priceArray = price.split('.');
+    priceArray[1] = priceArray[1].substr(0,2);
+    if(priceArray[1].length<2){
+        priceArray[1]+='0';
+    }
+    let vsNumber = vs.find('.vs-price-inner .number p');
+    vsNumber.text(priceArray[0]);
+    let vsCent = vs.find('.vs-price-inner .cent p');
+    vsCent.text('.'+priceArray[1]);
+}
 jQuery(document).ready(function(){
     languageSelect();
     //subMenuOpen();
@@ -1080,6 +1472,8 @@ jQuery(document).ready(function(){
     mobileLanguageSwitch();
     hoverDos();
     dosHoverOut();
+    switchMemorySpeed();
+    tariffBigSSD();
     window.happyclientsSection = jQuery('.happyclients');
     if(window.happyclientsSection){
         window.headerHeight = jQuery('.top-nav-wrapper').innerHeight() + jQuery('.header-middle').innerHeight() + jQuery('.navbar').innerHeight();
