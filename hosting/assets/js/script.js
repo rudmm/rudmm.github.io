@@ -434,7 +434,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Linux'],
             defaultNVMEPrice: '2.60',
-            dosDefaultPrice: '6.75'
+            dosDefaultPrice: '6.75',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
 
         },
         {
@@ -498,7 +501,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Windows','Linux'],
             defaultNVMEPrice: '3.90',
-            dosDefaultPrice: '8.38'
+            dosDefaultPrice: '8.38',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
         },
         {
             id:3,
@@ -574,7 +580,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Windows','Linux'],
             defaultNVMEPrice: '5.85',
-            dosDefaultPrice: '9.99'
+            dosDefaultPrice: '9.99',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
         },
         {
             id:4,
@@ -655,7 +664,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Windows','Linux'],
             defaultNVMEPrice: '8.55',
-            dosDefaultPrice: '13.45'
+            dosDefaultPrice: '13.45',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
         },
         {
             id:5,
@@ -736,7 +748,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Windows','Linux'],
             defaultNVMEPrice: '15.7',
-            dosDefaultPrice: '19.86'
+            dosDefaultPrice: '19.86',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
         },
         {
             id:6,
@@ -828,7 +843,10 @@ function tariffCustomize(idTariff=null){
             ],
             OS: ['Windows','Linux'],
             defaultNVMEPrice: '23.10',
-            dosDefaultPrice: '27.26'
+            dosDefaultPrice: '27.26',
+            link: '#1',
+            linkNVMe: '#2',
+            linkDos: '#3'
         }
     ];
     if(idTariff){
@@ -848,6 +866,7 @@ function tariffCustomize(idTariff=null){
         let port = tariff[i].variablePorts;
         let cart = tariff[i].variableCart;
         let OS = tariff[i].OS;
+        let link = tariff[i].link;
         let vs = jQuery('.nd-sub-1 .virtual-server');
         vs.each(function(i){
             let strClass = 'js-id-'+id;
@@ -887,6 +906,8 @@ function tariffCustomize(idTariff=null){
                 }
                 let vsOS = vsItem.find('.vs-item.os .vs-item-text p');
                 vsOS.html(OS.join(', '));
+                let vsLink = vsItem.find('.vs-item.link a');
+                vsLink.attr('href', link);
             }
         });
     }
@@ -954,12 +975,16 @@ function priceValue(id, tariff){
     let disk = vs.find('.disk .vs-item-swith .on').text();
     let dos = vs.find('.dos .vs-item-swith');
     let price;
+    let link;
     if(disk === 'SSD' && dos.hasClass('disable')){
         price = parseFloat(tariff.defaultPrice, 10);
+        link = tariff.link;
     }else if(disk === 'NVMe' && dos.children('.on').text()==='Нет' ){
         price = parseFloat(tariff.defaultNVMEPrice, 10);
+        link = tariff.linkNVMe;
     }else if(disk === 'NVMe' && dos.children('.on').text()==='Да'){
         price = parseFloat(tariff.dosDefaultPrice, 10);
+        link = tariff.linkDos;
     }
     let vsCPUValue = vs.find('.cpu .text').text();
     let cpuArray = tariff.variableCPU;
@@ -1024,6 +1049,8 @@ function priceValue(id, tariff){
     vsNumber.text(priceArray[0]);
     let vsCent = vs.find('.vs-price-inner .cent p');
     vsCent.text('.'+priceArray[1]);
+    let vsLink = vs.find('.vs-item.link a');
+    vsLink.attr('href', link);
 }
 
 function hoverDos(){
