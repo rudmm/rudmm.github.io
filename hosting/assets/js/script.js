@@ -419,17 +419,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 }
             ],
             OS: ['Linux'],
@@ -486,17 +495,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 },
             ],
             OS: ['Windows','Linux'],
@@ -565,17 +583,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 }
             ],
             OS: ['Windows','Linux'],
@@ -649,17 +676,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 }
             ],
             OS: ['Windows','Linux'],
@@ -733,17 +769,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 }
             ],
             OS: ['Windows','Linux'],
@@ -828,17 +873,26 @@ function tariffCustomize(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    linkSSD: '#3m#1',
+                    linkNVMe: '#3m#2',
+                    linkDos: '#3m#3',
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    linkSSD: '#6m#1',
+                    linkNVMe: '#6m#2',
+                    linkDos: '#6m#3',
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    linkSSD: '#12m#1',
+                    linkNVMe: '#12m#2',
+                    linkDos: '#12m#3',
                 }
             ],
             OS: ['Windows','Linux'],
@@ -1030,6 +1084,15 @@ function priceValue(id, tariff){
                 pr.removeClass('view');
                 break;
             }
+            if(disk === 'SSD' && dos.hasClass('disable')){
+                link = termArray[i].linkSSD;
+            }else if(disk === 'NVMe' && dos.children('.on').text()==='Нет' ){
+                price = parseFloat(tariff.defaultNVMEPrice, 10);
+                link = termArray[i].linkNVMe;
+            }else if(disk === 'NVMe' && dos.children('.on').text()==='Да'){
+                price = parseFloat(tariff.dosDefaultPrice, 10);
+                link = termArray[i].linkDos;
+            }
             pr.text('Скидка '+termArray[i].procentPromo+' %');
             pr.addClass('view');
             price = price * items;
@@ -1196,20 +1259,24 @@ function tariffBigSSD(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    link: '#3m'
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    link: '#6m'
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    link: '#12m'
                 }
             ],
-            OS: ['Windows','Linux']
+            OS: ['Windows','Linux'],
+            link: '#1'
         },
         {
             id:2,
@@ -1284,20 +1351,24 @@ function tariffBigSSD(idTariff=null){
                 {
                     title: '3 месяця',
                     procentPromo: 3,
-                    items: 3
+                    items: 3,
+                    link: '#3m'
                 },
                 {
                     title: '6 месяцев',
                     procentPromo: 5,
-                    items:6
+                    items:6,
+                    link: '#6m'
                 },
                 {
                     title: '12 месяцев',
                     procentPromo: 10,
-                    items:12
+                    items:12,
+                    link: '#12m'
                 }
             ],
-            OS: ['Windows','Linux']
+            OS: ['Windows','Linux'],
+            link: '#1'
         }
     ];
     if(idTariff){
@@ -1317,6 +1388,7 @@ function tariffBigSSD(idTariff=null){
         let port = tariff[i].variablePorts;
         let cart = tariff[i].variableCart;
         let OS = tariff[i].OS;
+        let link = tariff[i].link;
         let vs = jQuery('.nd-sub-3 .virtual-server');
         vs.each(function(i){
             let strClass = 'js-big-ssd-'+id;
@@ -1356,6 +1428,8 @@ function tariffBigSSD(idTariff=null){
                 }
                 let vsOS = vsItem.find('.vs-item.os .vs-item-text p');
                 vsOS.html(OS.join(', '));
+                let vsLink = vsItem.find('.vs-item.link a');
+                vsLink.attr('href', link);
             }
         });
     }
@@ -1457,10 +1531,13 @@ function priceValueSSD(id, tariff){
             let items = termArray[i].items;
             let procentPromo = termArray[i].procentPromo;
             let pr = vs.find('.vs-price-inner .bottom p:first-of-type');
+            let vsLink = vs.find('.vs-item.link a');
             if(items === 1){
                 pr.removeClass('view');
+                vsLink.attr('href', tariff.link);
                 break;
             }
+            vsLink.attr('href', termArray[i].link);
             pr.text('Скидка '+termArray[i].procentPromo+' %');
             pr.addClass('view');
             price = price * items;

@@ -3227,8 +3227,12 @@ img{
         margin-bottom: 40px;
     }
     .nd-sub-1 .virtual-server{
-        -ms-flex-preferred-size: 31%;
-            flex-basis: 31%;
+        -ms-flex-preferred-size:300px;
+            flex-basis: 300px;
+    }
+    .nd-sub-3 .virtual-server{
+        -ms-flex-preferred-size:300px;
+            flex-basis: 300px;
     }
     /*end nd-hosting*/
 
@@ -3582,7 +3586,7 @@ img{
             justify-content: space-around;
     }
     .nd-sub-1{
-        background-size: 100% 20%;
+        background-size: 100% 14%;
     }
     /*end nd*/
     /*begin star*/
@@ -4153,7 +4157,7 @@ img{
     .nd-sub-3 .row-virtual-servers{
         flex-wrap: wrap;
     }
-    .nd-sub-3 .row-virtual-servers .virtual-server{
+    .nd-sub-3 .row-virtual-servers .virtual-server, .nd-sub-1 .row-virtual-servers .virtual-server{
         flex-basis: 240px;
     }
     /*end nd-hosting*/
@@ -4519,7 +4523,13 @@ img{
                 align-items: center;
     }
     .virtual-server{
-        max-width: 320px;
+        max-width: 240px;
+    }
+    .nd-sub-3{
+        background-size: 100% 32%;
+    }
+    .nd-sub-1{
+        background-size: 100% 16%;
     }
 }
 
@@ -4722,6 +4732,10 @@ img{
     .price-details{
         padding-bottom: 20px;
     }
+
+    .nd-sub-3{
+        background-size: 100% 35%;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -4885,6 +4899,9 @@ img{
     }
     .nd .left-block .header-list{
         margin-bottom: 32px;
+    }
+    .nd-sub-3{
+        background-size: 100% 45%;
     }
 }
 
